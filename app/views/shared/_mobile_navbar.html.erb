@@ -1,0 +1,52 @@
+<div id='offcanvas' class='uk-offcanvas' aria-hidden='true'>
+  <div class='uk-offcanvas-bar uk-offcanvas-bar-show'>
+    <ul class='uk-nav uk-nav-offcanvas' data-uk-nav>
+      <li>
+        <a class='uk-h4' href="<%= agent_page_path(:features) %>">
+          <i class='uk-icon-trophy'></i> Website Features
+        </a>
+      </li>
+      <li>
+        <a class='uk-h4' href="<%= agent_page_path(:testimonials) %>">
+          <i class='uk-icon-star'></i> Testimonials
+        </a>
+      </li>
+      <li>
+        <a class='uk-h4' href="<%= agent_page_path(:training) %>">
+          <i class='uk-icon-clock-o'></i> Training Classes
+        </a>
+      </li>
+      <li class='uk-nav-header'>For Real Estate Agents</li>
+      <li>
+        <%= link_to('Content Management', agent_page_path(:cms)) %>
+      </li>
+      <li>
+        <%= link_to('MLS IDX', agent_page_path(:idx)) %>
+      </li>
+      <li>
+        <%= link_to('30+ HD Videos', agent_page_path(:videos)) %>
+      </li>
+      <li>
+        <%= link_to('City Centric Content', agent_page_path(:content)) %>
+      </li>
+      <li>
+        <%= link_to('Lead Capture', agent_page_path(:'lead-capture')) %>
+      </li>
+      <li>
+        <%= link_to('Lead Management', agent_page_path(:crm)) %>
+      </li>
+      <li>
+        <%= link_to('Drip Marketing', agent_page_path(:'drip-marketing')) %>
+      </li>
+      <li>
+        <%= link_to('Social Media Publishing', agent_page_path(:'social-media')) %>
+      </li>
+      <li>
+        <%= link_to('Blogging Platform', agent_page_path(:blog)) %>
+      </li>
+      <li>
+        <%= link_to('Live Support', agent_page_path(:support)) %>
+      </li>
+    </ul>
+  </div>
+</div>

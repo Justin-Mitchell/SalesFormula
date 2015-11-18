@@ -1,0 +1,101 @@
+a, .uk-link, .uk-subnav>li>a {
+  color: #01BCF1;
+}
+.nav-placeholder {
+  height: 56px;
+  margin: 0;
+}
+#nav {
+  background-color: rgba(255, 255, 255, 1);
+}
+.uk-navbar-brand {
+  padding: 0;
+}
+.uk-navbar-brand>a>img {
+  margin-top: 5px;
+}
+.uk-navbar-nav .uk-dropdown {
+  background: #01BCF1;
+  border-radius: 0 0 3px 3px;
+}
+.uk-navbar-nav .uk-nav-dropdown>li>a {
+  color: #FFFFFF;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+.uk-navbar-nav>li>.uk-parent:hover>a, .uk-navbar-nav>li>.uk-parent>a:focus, .uk-navbar-nav>li.uk-open>a {
+  background: #01BCF1;
+  color: #FFFFFF;
+}
+.uk-navbar-nav>li>a {
+  height: 56px;
+  padding: 18px 15px 18px 15px;
+  line-height: 20px;
+}
+.uk-navbar-nav>li>a:hover, .uk-navbar-nav>li>a:focus {
+  background: #01BCF1;
+  color: #FFFFFF;
+}
+.uk-navbar-nav>li>a.navbar-submit {
+  padding: 8px 15px;
+  height: 36px;
+  margin-top: 10px;
+  background-color: #01BCF1;
+  color: #FFFFFF;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+#lead-topic {
+  background-color: #01BCF1;
+}
+.lead-title {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 38px;
+}
+::selection {
+  background:#39f;
+  color:#fff;
+  text-shadow:none
+}
+#breadcrumbs {
+  padding: 5px 0;
+  background-color: #FBFCFE;
+  border-bottom: solid 1px #F0F2F9;
+  line-height: 30px;
+}
+.uk-subnav>*>* {
+  font-weight: normal;
+}
+.uk-subnav-line > :before {
+  height: 15px;
+}
+.breadcrumbs {
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+.breadcrumbs.uk-subnav>li {
+  font-size: 13px;
+}
+.breadcrumbs.uk-subnav-line>li:first-child:before {
+  font-family: FontAwesome;
+  content: "\f015";
+  color: #01BCF1;
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  border-left: none;
+  margin-right: 8px;
+}
+.breadcrumbs.uk-subnav-line>li:nth-child(n+2):before {
+  font-family: FontAwesome;
+  content: "\f0da";
+  color: #01BCF1;
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  -webkit-font-smooting: antialiased;
+  border-left: none;
+}

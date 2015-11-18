@@ -1,0 +1,178 @@
+<!-- Navbar -->
+<nav class='nav-placeholder'>
+  <div id='nav'>
+    <a href='#offcanvas' class='uk-navbar-toggle uk-hidden-large' data-uk-offcanvas></a>
+    <div class='uk-container uk-container-center'>
+      <%= render 'shared/mobile_navbar' %>
+      <div class='uk-navbar-brand' itemscope itemtype='http://schema.org/Product'>
+        <a itemprop='url' href="<%= root_url %>" title='AgentFormula.com'>
+          <!--AgentFormula.com-->
+          <%= image_tag('https://s3-us-west-1.amazonaws.com/sales.agentformula.com/agentformula-logo-484x77.png', itemprop: 'logo', alt: 'Agent Formula | Building Real Estate Agent Websites', width: '242', height: '39') %>
+        </a>
+      </div>
+      <ul class='uk-navbar-nav uk-margin-large-left uk-hidden-medium uk-hidden-small'>
+        <li class='uk-parent' data-uk-dropdown aria-haspopup='true' aria-expanded='false'>
+          <a href="/">
+            <i class='uk-icon-bars'></i>
+            For Real Estate Agents
+          </a>
+          <div class='uk-dropdown uk-dropdown-navbar uk-dropdown-width-4'>
+            <div class='uk-grid uk-dropdown-grid'>
+              <div class='uk-width-1-4'>
+                <ul class='uk-nav uk-nav-dropdown uk-panel'>
+                  <li>
+                    <a href="<%= agent_page_path(:features) %>" class='uk-h4'>
+                      <i class='uk-icon-trophy'></i>
+                      System Features
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<%= testimonials_path %>" class='uk-h4'>
+                      <i class='uk-icon-star'></i>
+                      Testimonials
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<%= agent_page_path(:training) %>" class='uk-h4'>
+                      <i class='uk-icon-clock-o'></i>
+                      Training Classes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class='uk-width-1-4'>
+                <ul class='uk-nav uk-nav-dropdown uk-panel'>
+                  <li>
+                    <%= link_to('Lead Capture', agent_page_path(:'lead-capture')) %>
+                  </li>
+                  <li>
+                    <%= link_to('Lead Management', agent_page_path(:crm)) %>
+                  </li>
+                  <li>
+                    <%= link_to('Drip Marketing', agent_page_path(:'drip-marketing')) %>
+                  </li>
+                  <li>
+                    <%= link_to('Social Media Publishing', agent_page_path(:'social-media')) %>
+                  </li>
+                </ul>
+              </div>
+              <div class='uk-width-1-4'>
+                <ul class='uk-nav uk-nav-dropdown uk-panel'>
+                  <li>
+                    <%= link_to('Web Content Management', agent_page_path(:cms)) %>
+                  </li>
+                  <li>
+                    <%= link_to('MLS IDX', agent_page_path(:idx)) %>
+                  </li>
+                  <li>
+                    <%= link_to('30+ HD Videos', agent_page_path(:videos)) %>
+                  </li>
+                  <li>
+                    <%= link_to('City Centric Content', agent_page_path(:content)) %>
+                  </li>
+                </ul>
+              </div>
+              <div class='uk-width-1-4'>
+                <ul class='uk-nav uk-nav-dropdown uk-panel'>
+                  <li>
+                    <%= link_to('Blogging Platform', agent_page_path(:blog)) %>
+                  </li>
+                  <li>
+                    <%= link_to('Support Included', agent_page_path(:support)) %>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class='uk-parent' data-uk-dropdown aria-haspopup='true' aria-expanded='false'>
+          <a href="/">
+            <i class='uk-icon-bars'></i>
+            For Brokers
+          </a>
+          <div class='uk-dropdown uk-dropdown-navbar uk-dropdown-width-4'>
+            <div class='uk-grid uk-dropdown-grid'>
+              <div class='uk-width-1-4'>
+                <ul class='uk-nav uk-nav-dropdown uk-panel'>
+                  <li>
+                    <a href="<%= agent_page_path(:features) %>" class='uk-h4'>
+                      <i class='uk-icon-trophy'></i>
+                      System Features
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<%= testimonials_path %>" class='uk-h4'>
+                      <i class='uk-icon-star'></i>
+                      Testimonials
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<%= agent_page_path(:training) %>" class='uk-h4'>
+                      <i class='uk-icon-clock-o'></i>
+                      Training Classes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class='uk-width-1-4'>
+                <ul class='uk-nav uk-nav-dropdown uk-panel'>
+                  <li>
+                    <%= link_to('Lead Capture', agent_page_path(:'lead-capture')) %>
+                  </li>
+                  <li>
+                    <%= link_to('Lead Management', agent_page_path(:crm)) %>
+                  </li>
+                  <li>
+                    <%= link_to('Drip Marketing', agent_page_path(:'drip-marketing')) %>
+                  </li>
+                  <li>
+                    <%= link_to('Social Media Publishing', agent_page_path(:'social-media')) %>
+                  </li>
+                </ul>
+              </div>
+              <div class='uk-width-1-4'>
+                <ul class='uk-nav uk-nav-dropdown uk-panel'>
+                  <li>
+                    <%= link_to('Web Content Management', agent_page_path(:cms)) %>
+                  </li>
+                  <li>
+                    <%= link_to('MLS IDX', agent_page_path(:idx)) %>
+                  </li>
+                  <li>
+                    <%= link_to('30+ HD Videos', agent_page_path(:videos)) %>
+                  </li>
+                  <li>
+                    <%= link_to('City Centric Content', agent_page_path(:content)) %>
+                  </li>
+                </ul>
+              </div>
+              <div class='uk-width-1-4'>
+                <ul class='uk-nav uk-nav-dropdown uk-panel'>
+                  <li>
+                    <%= link_to('Blogging Platform', agent_page_path(:blog)) %>
+                  </li>
+                  <li>
+                    <%= link_to('Support Included', agent_page_path(:support)) %>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="<%= contact_us_path %>" rel='nofollow'>Contact Us</a>
+        </li>
+      </ul>
+      <div class='uk-navbar-flip uk-hidden-small'>
+        <ul class='uk-navbar-nav'>
+          <li>
+            <%= link_to('Sign Up', "/submit", rel: 'nofollow', class: 'navbar-submit') %>
+          </li>
+          <li class='uk-margin-left'></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- /Navbar -->

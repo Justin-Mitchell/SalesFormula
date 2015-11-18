@@ -1,0 +1,9 @@
+agent:
+  crm: "CRM (Client Relationship Management)"
+  blog: "Blog"
+  cms: "CMS (Content Management System)"
+  "drip-marketing": "Email Drip Marketing"
+  features: "Website Features"
+  idx: "MLS IDX Search"
+  training: 'Training Classes'
+  videos: 'HD Videos'

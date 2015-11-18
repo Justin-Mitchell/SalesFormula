@@ -1,0 +1,6 @@
+      Prefix Verb URI Pattern                                      Controller#Action
+        root GET  /                                                pages#index
+    about_us GET  /about-us(.:format)                              pages#about
+  contact_us GET  /contact-us(.:format)                            pages#contact
+testimonials GET  /testimonials(.:format)                          pages#testimonials
+  agent_page GET  /websites/for-real-estate-agents/:page(.:format) agents#show
