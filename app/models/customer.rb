@@ -1,12 +1,10 @@
 class Customer < ActiveRecord::Base
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
-  # devise :database_authenticatable, :registerable,
-  #        :recoverable, :rememberable, :trackable, :validatable,
-  #        :authentication_keys => [:email]
+  
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, 
+         :validatable, :authentication_keys => [:email]
                   
   attr_accessor   :credit_card_number, :cvv
-  # attr_accessible :title, :body
   
   def normalize_street_address
       address = StreetAddress::US.parse("#{self.office_street_address}, #{self.office_city}, NV, #{self.office_zipcode}")

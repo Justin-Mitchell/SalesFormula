@@ -15,3 +15,12 @@
 //= require turbolinks
 //= require uikit
 //= require_tree .
+
+function displayGoogleMap(url, callback) {
+  $('#location-map').append('<iframe id="agent-formula-map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="700" height="300"></iframe>');
+  $('iframe#agent-formula-map').attr('src', url);
+
+  $('iframe#agent-formula-map').load(function() {
+    callback(this);
+  })
+}

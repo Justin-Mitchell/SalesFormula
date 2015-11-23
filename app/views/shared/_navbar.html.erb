@@ -85,7 +85,7 @@
             </div>
           </div>
         </li>
-        <li class='uk-parent' data-uk-dropdown aria-haspopup='true' aria-expanded='false'>
+        <li class='uk-parent uk-hidden' data-uk-dropdown aria-haspopup='true' aria-expanded='false'>
           <a href="/">
             <i class='uk-icon-bars'></i>
             For Brokers
@@ -166,9 +166,11 @@
       <div class='uk-navbar-flip uk-hidden-small'>
         <ul class='uk-navbar-nav'>
           <li>
-            <%= link_to('Sign Up', "/submit", rel: 'nofollow', class: 'navbar-submit') %>
+            <%= link_to('Login', "/submit", rel: 'nofollow') %>
           </li>
-          <li class='uk-margin-left'></li>
+          <li>
+            <%= link_to('Sign Up', "/submit", rel: 'nofollow') %>
+          </li>
           <li></li>
         </ul>
       </div>
