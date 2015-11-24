@@ -4,17 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><%= yield(:title) %></title>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body id="<%= params[:controller] %>">
   <%= render 'shared/navbar' %>
   <%= render 'shared/lead_topic' %>
+  <% if !yield(:page_header).blank? %>
+  <%= render yield(:page_header) %>
+  <% end %>
   <% if render_breadcrumbs? %>
   <%= render 'shared/breadcrumb_bar' %>
   <% end %>
   <%= yield %>
+  <%= render 'shared/footer' %>
   <%= yield(:dynamic_javascripts) %>
 </body>
 </html>

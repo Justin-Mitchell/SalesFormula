@@ -1,0 +1,35 @@
+<%= content_for(:title, "Blog | AgentFormula.com") %>
+<%= content_for(:page_header, 'shared/headers/blog')%>
+
+<div class='tm-block-bg-main uk-margin-large-top'>
+  <div class='uk-container uk-container-center'>
+    <div class='tm-middle tm-padding-bottom-medium uk-grid' data-uk-grid-match data-uk-grid-margin>
+      <div class='tm-main uk-width-medium-1-1'>
+        <main class='tm-content'>
+          <div class='uk-grid' data-uk-grid-match data-uk-grid-margin>
+            <div class='uk-width-medium-1-1'>
+              <% @posts.each do |post| %>
+              <article id="<%= post.id %>" class='uk-article post status-publish format-standard has-post-thumbnail hentry category-children-health-questions tag-children tag-health tag-patient' data-permalink="<%= post_path(post.id) %>">
+                <h2 class='uk-article-title'>
+                  <%= link_to post.title, post_path(post.id) %>
+                </h2>
+                <p class='uk-article-meta tm-meta-border-bot'>
+                  By <%= link_to post.author, post_path(post.id) %>.
+                  <%#= raise %>
+                  <time datetime="<%= post.published_at.strftime("%b %d, %Y %I:%m%p")%>"><%= post.published_at.strftime("%b %d, %Y %I:%m%p")%></time>
+                </p>
+                <%= link_to post_path(post.id) do %>
+                  <%= image_tag(post.thumbnail, width: '150', height: '150', class: 'tm-category-post-thumb') %>
+                <% end %>
+                <div class='tm-single-article-content uk-margin-bottom'>
+                  <%= post.excerpt %>
+                </div>
+              </article>
+              <% end %>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>

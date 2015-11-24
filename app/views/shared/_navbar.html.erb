@@ -38,6 +38,12 @@
                       Training Classes
                     </a>
                   </li>
+                  <li>
+                    <a href="<%= agent_page_path(:training) %>" class='uk-h4'>
+                      <i class='uk-icon-life-ring'></i>
+                      Live Support
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div class='uk-width-1-4'>
@@ -49,7 +55,7 @@
                     <%= link_to('Lead Management', agent_page_path(:crm)) %>
                   </li>
                   <li>
-                    <%= link_to('Drip Marketing', agent_page_path(:'drip-marketing')) %>
+                    <%= link_to('Email Drip Marketing', agent_page_path(:'drip-marketing')) %>
                   </li>
                   <li>
                     <%= link_to('Social Media Publishing', agent_page_path(:'social-media')) %>
@@ -59,33 +65,31 @@
               <div class='uk-width-1-4'>
                 <ul class='uk-nav uk-nav-dropdown uk-panel'>
                   <li>
-                    <%= link_to('Web Content Management', agent_page_path(:cms)) %>
+                    <%= link_to('Sticky Content', agent_page_path(:content)) %>
                   </li>
                   <li>
-                    <%= link_to('MLS IDX', agent_page_path(:idx)) %>
+                    <%= link_to('MLS IDX Search', agent_page_path(:idx)) %>
                   </li>
                   <li>
-                    <%= link_to('30+ HD Videos', agent_page_path(:videos)) %>
+                    <%= link_to('HQ Area Videos', agent_page_path(:videos)) %>
                   </li>
                   <li>
-                    <%= link_to('City Centric Content', agent_page_path(:content)) %>
+                    <%= link_to('Build Custom Webpages', agent_page_path(:cms)) %>
                   </li>
                 </ul>
               </div>
               <div class='uk-width-1-4'>
                 <ul class='uk-nav uk-nav-dropdown uk-panel'>
                   <li>
-                    <%= link_to('Blogging Platform', agent_page_path(:blog)) %>
+                    <%= link_to('Blogging Platform', blogs_path) %>
                   </li>
-                  <li>
-                    <%= link_to('Support Included', agent_page_path(:support)) %>
-                  </li>
+                  <li></li>
                 </ul>
               </div>
             </div>
           </div>
         </li>
-        <li class='uk-parent uk-hidden' data-uk-dropdown aria-haspopup='true' aria-expanded='false'>
+        <li class='uk-parent' data-uk-dropdown aria-haspopup='true' aria-expanded='false'>
           <a href="/">
             <i class='uk-icon-bars'></i>
             For Brokers
@@ -133,7 +137,7 @@
               <div class='uk-width-1-4'>
                 <ul class='uk-nav uk-nav-dropdown uk-panel'>
                   <li>
-                    <%= link_to('Web Content Management', agent_page_path(:cms)) %>
+                    <%= link_to('Sticky Content', agent_page_path(:cms)) %>
                   </li>
                   <li>
                     <%= link_to('MLS IDX', agent_page_path(:idx)) %>

@@ -1,6 +1,23 @@
-      Prefix Verb URI Pattern                                      Controller#Action
-        root GET  /                                                pages#index
-    about_us GET  /about-us(.:format)                              pages#about
-  contact_us GET  /contact-us(.:format)                            pages#contact
-testimonials GET  /testimonials(.:format)                          pages#testimonials
-  agent_page GET  /websites/for-real-estate-agents/:page(.:format) agents#show
+                      Prefix Verb   URI Pattern                                      Controller#Action
+        new_customer_session GET    /customers/sign_in(.:format)                     devise/sessions#new
+            customer_session POST   /customers/sign_in(.:format)                     devise/sessions#create
+    destroy_customer_session DELETE /customers/sign_out(.:format)                    devise/sessions#destroy
+           customer_password POST   /customers/password(.:format)                    devise/passwords#create
+       new_customer_password GET    /customers/password/new(.:format)                devise/passwords#new
+      edit_customer_password GET    /customers/password/edit(.:format)               devise/passwords#edit
+                             PATCH  /customers/password(.:format)                    devise/passwords#update
+                             PUT    /customers/password(.:format)                    devise/passwords#update
+cancel_customer_registration GET    /customers/cancel(.:format)                      devise/registrations#cancel
+       customer_registration POST   /customers(.:format)                             devise/registrations#create
+   new_customer_registration GET    /customers/sign_up(.:format)                     devise/registrations#new
+  edit_customer_registration GET    /customers/edit(.:format)                        devise/registrations#edit
+                             PATCH  /customers(.:format)                             devise/registrations#update
+                             PUT    /customers(.:format)                             devise/registrations#update
+                             DELETE /customers(.:format)                             devise/registrations#destroy
+                        root GET    /                                                pages#index
+                    about_us GET    /about-us(.:format)                              pages#about
+                  contact_us GET    /contact-us(.:format)                            pages#contact
+                testimonials GET    /testimonials(.:format)                          pages#testimonials
+                       blogs GET    /blogs(.:format)                                 blogs#index
+                        post GET    /blogs/:id(.:format)                             blogs#show
+                  agent_page GET    /websites/for-real-estate-agents/:page(.:format) agents#show

@@ -206,10 +206,10 @@ select {
     padding-bottom: 100px;
 }
 .tm-bg-image-1 {
-    background: rgba(0, 0, 0, 0) url("../images/bg-top-big.jpg") no-repeat scroll left top / cover ;
+    background: rgba(0, 0, 0, 0) url("https://s3-us-west-1.amazonaws.com/sales.agentformula.com/tm-bg-image-1.jpg") no-repeat scroll left top / cover ;
 }
 .tm-bg-image-2 {
-    background: rgba(0, 0, 0, 0) url("../images/bg-top-f-pricing.jpg") no-repeat scroll left top / cover ;
+    background: rgba(0, 0, 0, 0) url("https://s3-us-west-1.amazonaws.com/sales.agentformula.com/tm-bg-image-2.jpg") no-repeat scroll left top / cover ;
 }
 .tm-bg-image-3 {
     background: rgba(0, 0, 0, 0) url("../images/bg-top-slideshow2.jpg") no-repeat scroll left top / cover ;
@@ -1221,6 +1221,40 @@ aside .tm-search-button {
     margin-bottom: -30px;
     margin-top: 20px;
 }
+.ClientShowcase h3.uk-panel-title {
+    color: #69767e;
+    font-family: "Raleway";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ClientShowcase h3.uk-panel-title > span {
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+}
+.ClientShowcase h3.uk-panel-title > span::before, .ClientShowcase h3.uk-panel-title > span::after {
+    border-top: 1px solid rgba(80, 173, 226, 0.2);
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    width: 600px;
+}
+.ClientShowcase h3.uk-panel-title > span::after {
+    left: 100%;
+}
+.ClientShowcase p.tm-widget-title-content {
+    color: #94a4ad;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
 .TestimonialsFeatures h3.uk-panel-title {
     color: #69767e;
     font-family: "Raleway";
@@ -1465,10 +1499,13 @@ aside .tm-search-button {
 }
 .tm-footer-logo {
     color: #ffffff;
-    font-family: "Raleway";
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 56px;
+    font-family: "prototype";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.tm-footer-logo img {
+    float: left;
 }
 .tm-footer-logo:hover {
     color: #ffffff;
@@ -1476,9 +1513,6 @@ aside .tm-search-button {
 }
 .tm-footer-logo span {
     vertical-align: middle;
-}
-.tm-footer-logo img {
-    padding-right: 10px;
 }
 .tm-footer-info {
     color: #ffffff;
@@ -1649,11 +1683,24 @@ span.wpcf7-not-valid-tip {
     color: #50ade2;
 }
 .tm-blog-fullscreen-img {
-    background: rgba(0, 0, 0, 0) url("../images/bg-blog-fullscreen.jpg") no-repeat scroll left top / cover ;
+    background: rgba(0, 0, 0, 0) url("https://s3-us-west-1.amazonaws.com/sales.agentformula.com/tm-blog-fullscreen.jpg") no-repeat scroll left top / cover ;
 }
 .tm-contact-fullscreen-img {
     background: rgba(0, 0, 0, 0) url("../images/bg-contact-fullscreen.jpg") no-repeat scroll left top / cover ;
 }
+.tm-cms-fullscreen-img {
+    background: rgba(0, 0, 0, 0) url("../images/bg-contact-fullscreen.jpg") no-repeat scroll left top / cover ;
+}
+.tm-crm-fullscreen-img {
+    background: rgba(0, 0, 0, 0) url("../images/bg-contact-fullscreen.jpg") no-repeat scroll left top / cover ;
+}
+.tm-drip-marketing-fullscreen-img {
+    background: rgba(0, 0, 0, 0) url("../images/bg-contact-fullscreen.jpg") no-repeat scroll left top / cover ;
+}
+.tm-features-fullscreen-img {
+    background: rgba(0, 0, 0, 0) url("../images/bg-contact-fullscreen.jpg") no-repeat scroll left top / cover ;
+}
+
 .tm-touch-form h3.uk-panel-title {
     color: #69767e;
     font-size: 28px;
@@ -2086,12 +2133,12 @@ input:-moz-placeholder {
 }
 .tm-fullscr-margin {
     margin-bottom: 60px;
-    margin-top: 180px;
+    margin-top: 100px;
 }
 .tm-services-bot-full-img h2, .tm-gallery-fullscreen-img h2, .tm-clinics-fullscreen-img h2, .tm-services-fullscreen-img h2, .tm-doctors-fullscreen-img h2, .tm-store-fullscreen-img h2, .tm-blog-fullscreen-img h2, .tm-contact-fullscreen-img h2, .tm-about-fullscreen-img h2, .tm-search-fullscreen-img h2, .tm-pages-fullscreen-img h2 {
     color: #ffffff;
     font-size: 42px;
-    font-weight: 700;
+    font-weight: normal;
     text-transform: uppercase;
 }
 .tm-services-bot-full-img {
@@ -2104,6 +2151,170 @@ input:-moz-placeholder {
     font-weight: 400;
     padding: 0 14%;
 }
+
+/* Widget DemoWebsites slider  */
+.DemoWebsites .uk-slider-container {
+  padding-bottom: 0px;
+}
+.DemoWebsites .uk-slider-container ul li img {
+  width: 99.8%;
+}
+.DemoWebsites h3.uk-panel-title {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Raleway';
+  color: #69767e;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.DemoWebsites .tm-widget-title-content {
+  text-align: left;
+}
+.DemoWebsites .tm-slide-nav {
+  position: absolute;
+  right: 0;
+  top: -25px;
+}
+.DemoWebsites .uk-slidenav {
+  font-size: 45px;
+  line-height: 45px;
+  height: 45px;
+}
+.DemoWebsites h3.uk-panel-title > span {
+  padding: 0 30px 0 0;
+  position: relative;
+  display: inline-block;
+}
+.DemoWebsites h3.uk-panel-title > span:after {
+  content: "";
+  width: 800px;
+  border-top: 1px solid rgba(80, 173, 226, 0.2);
+  position: absolute;
+  right: 100%;
+  top: 50%;
+}
+.DemoWebsites h3.uk-panel-title > span:after {
+  left: 100%;
+}
+.DemoWebsites .uk-slidenav-position .uk-slidenav-previous {
+  display: block;
+  left: -120px;
+  background: #f2f6f7;
+}
+.DemoWebsites .uk-slidenav-position .uk-slidenav-next {
+  left: -60px;
+  display: block;
+  background: #f2f6f7;
+}
+.DemoWebsites .tm-block-item {
+  background: #ffffff;
+  border: 1px solid #d3ebf8;
+}
+.DemoWebsites ul li .onsale {
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+}
+.DemoWebsites .star-rating {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #50ade2;
+}
+.DemoWebsites .star-rating span {
+  color: #50ade2;
+}
+.DemoWebsites ul li h3 {
+  margin: 0;
+  padding: 14px 0 10px 0;
+  font-size: 16px;
+  line-height: 1.4em;
+  border-bottom: 1px solid #d3ebf8;
+  color: #69767e;
+}
+.DemoWebsites ul li .tm-woo-price-cover {
+  border-top: 1px solid #d3ebf8;
+}
+.DemoWebsites ul li .price {
+  position: relative;
+  display: block;
+  font-weight: 400;
+  margin-bottom: none;
+  color: #50ade2;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: center;
+  border: none;
+  padding: 10px 0;
+  margin: 0;
+}
+.DemoWebsites ul li a:hover img {
+  opacity: 0.8;
+}
+.DemoWebsites ul li .price del {
+  font-size: 13px;
+  margin-right: 0;
+  position: absolute;
+  top: -25px;
+  background: #ffffff;
+  padding: 1px;
+  color: #69767e;
+}
+.DemoWebsites .woocommerce a.button {
+  margin: 0px;
+  left: auto;
+  display: inline-block;
+  border: medium none;
+  box-sizing: border-box;
+  padding: 0px 12px;
+  line-height: 40px !important;
+  min-height: 40px;
+  color: #ffffff;
+  background: #50ADE2;
+  font-weight: 600;
+  text-align: center;
+}
+.DemoWebsites .woocommerce a.button {
+  color: #ffffff;
+  background: #50ADE2;
+}
+.DemoWebsites ul li .price ins {
+  background: none;
+  color: #50ade2;
+}
+.DemoWebsites .woocommerce .tm-price a.button {
+  width: 100%;
+  float: right;
+}
+.uk-slidenav-contrast {
+  color: rgba(80, 173, 226, 0.5);
+}
+.uk-slidenav-contrast:hover,
+.uk-slidenav-contrast:focus {
+  color: rgba(80, 173, 226, 0.3);
+}
+.woocommerce a.button {
+  font-size: inherit;
+  font-family: inherit;
+  margin: 0;
+  left: auto;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-block;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 12px;
+  line-height: 30px !important;
+  min-height: 30px;
+  background: #eeeeee;
+  color: #94a4ad;
+}
+
 .woocommerce .ag-page-wrapp div.product .product_title, .woocommerce-page .ag-page-wrapp div.product .product_title, .woocommerce .ag-page-wrapp #content div.product .product_title, .woocommerce-page .ag-page-wrapp #content div.product .product_title {
     font-weight: 700;
     margin-bottom: 20px;
