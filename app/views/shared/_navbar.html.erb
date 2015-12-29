@@ -6,8 +6,8 @@
       <%= render 'shared/mobile_navbar' %>
       <div class='uk-navbar-brand' itemscope itemtype='http://schema.org/Product'>
         <a itemprop='url' href="<%= root_url %>" title='AgentFormula.com'>
-          <!--AgentFormula.com-->
-          <%= image_tag('https://s3-us-west-1.amazonaws.com/sales.agentformula.com/agentformula-logo-484x77.png', itemprop: 'logo', alt: 'Agent Formula | Building Real Estate Agent Websites', width: '242', height: '39') %>
+          <!--AgentFormula.com https://s3-us-west-1.amazonaws.com/sales.agentformula.com/agentformula-logo-484x77.png-->
+          <%= image_tag('signup-banner.png', itemprop: 'logo', alt: 'Agent Formula | Building Real Estate Agent Websites', width: '242', height: '39') %>
         </a>
       </div>
       <ul class='uk-navbar-nav uk-margin-large-left uk-hidden-medium uk-hidden-small'>
@@ -173,7 +173,7 @@
             <%= link_to('Login', "/submit", rel: 'nofollow') %>
           </li>
           <li>
-            <%= link_to('Sign Up', "/submit", rel: 'nofollow') %>
+            <%= link_to('Sign Up', new_customer_registration_path, rel: 'nofollow') %>
           </li>
           <li></li>
         </ul>

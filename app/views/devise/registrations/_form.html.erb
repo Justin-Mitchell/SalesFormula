@@ -1,0 +1,35 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'uk-form uk-form-horizontal uk-margin-large-top'}) do |f| %>
+
+<%= devise_error_messages! %>
+  <div class="uk-form-row">
+    <label for='first_name' class='uk-form-label'>Full Name</label>
+    <div class='uk-form-controls'>
+      <%= f.text_field :first_name, class: 'uk-form-width-large', placeholder: 'As appears on Realtors License' %>
+    </div>
+  </div>
+  <div class="uk-form-row">
+    <label for='contact_phone' class='uk-form-label'>Business Phone Number</label>
+    <div class='uk-form-controls'>
+      <%= f.text_field :contact_phone, class: 'uk-form-width-large', placeholder: 'Will be displayed publicly.' %>
+    </div>
+  </div>
+  <div class="uk-form-row">
+    <label for='email' class='uk-form-label'>Business Email Address</label>
+    <div class='uk-form-controls'>
+      <%= f.text_field :email, class: 'uk-form-width-large', placeholder: 'Will be used publicly' %>
+    </div>
+  </div>
+  <div class="uk-form-row">
+    <label for='password' class='uk-form-label'>Create Account Password</label>
+    <div class='uk-form-controls'>
+      <%= f.password_field :password, class: 'uk-form-width-large', placeholder: 'Minimum 6 characters' %>
+    </div>
+  </div>
+  <div class='uk-form-row'>
+    <div class='uk-form-controls'>
+      <div class='uk-text-right'>
+        <%= f.submit 'Next Step >>', class: 'md-btn md-btn-primary' %>
+      </div>
+    </div>
+  </div>
+<% end %>

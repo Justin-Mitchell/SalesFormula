@@ -1,29 +1,83 @@
-<h2>Sign up</h2>
+<%= content_for(:title, "Sign Up | AgentFormula.com") %>
+<%= content_for(:breadcrumb, "Sign Up") %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+<div id='boarding-header'>
+  <div class='tm-section-box tm-block-bg-primary'>
+    <div class='uk-container uk-container-center'>
+      <section class='tm-padding-top-small tm-padding-bottom-small uk-grid' data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: false, delay:300}">
+        <div class='uk-width-1-3'>
+          Real Estate Web-System
+        </div>
+        <div class='uk-width-1-3 onboard-login uk-text-right'>
+          <p class='mt10'>
+            Alread have an account?
+            <%= link_to "Login", new_customer_session_path, class: 'uk-button uk-button-link uk-text-contrast' %>
+          </p>
+        </div>
+        <div class='uk-width-1-3'>
+          <div class='uk-text-right'>
+            <span>Step 1 of 5</span>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+<div id='boarding-content'>
+  <div class='tm-block-bg-main uk-margin-large-top'>
+    <div class='uk-container uk-container-center'>
+      <div class='tm-middle tm-padding-bottom-medium uk-grid' data-uk-grid-match data-uk-grid-margin>
+        <div class='tm-main uk-width-medium-1-1'>
+          <main class='tm-content'>
+            <div class='uk-grid' data-uk-grid-match data-uk-grid-margin>
+              <div class='uk-width-medium-7-10'>
+                  <h3>Let's Begin With Some Basic Infomation</h3>
+                  <p class='fz16 mb30'>
+                    Don't worry, you can update or change your information at any time.
+                  </p>
+                  <%= render 'form' %>
+                </div>
+                <div class='uk-width-medium-3-10' data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true, delay:900}">
+                  <h3>Help</h3>
+                  <p class='mb30'>
+                    <span class='fwlt'>
+                      We recommend you use your business email address and phone number since this information will be visible on your website if and when you decide to make it live and available to the public.
+                    </span>
+                  </p>
+                  <p class='mb30'>
+                    <span class='fwlt'>
+                      <%= mail_to('agentcare@agentformula.com') %><br/>
+                      (702) 990-0480
+                    </span>
+                  </p>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+<div id='boarding-footer'>
+  <div class='uk-container uk-container-center'>
+    <div class='tm-middle uk-grid' data-uk-grid-match data-uk-grid-margin>
+      <div class='tm-main uk-width-medium-1-1'>
+        <main class='tm-content'>
+          <div class='uk-grid'>
+            <div class='uk-width-1-10'>
+              <%= image_tag('https://s3-us-west-1.amazonaws.com/sales.agentformula.com/digicert-logo.png', style: 'height: 30px', class: 'uk-float-left') %>
+            </div>
+            <div class='uk-width-9-10'>
+              <p>
+                <i class='uk-icon-lock uk-icon-small'></i> <span class='uk-text-medium'>SSL Security by </span>
+                <%= link_to('Digicert®', '#', class: 'uk-text-medium') %>
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>

@@ -21,13 +21,13 @@
           </li>
           <% else %>
           <li>
-            <strong><%= params[:action] %></strong>
+            <strong><%= yield(:breadcrumb) || params[:action] %></strong>
           </li>
           <% end %>
         </ul>
       </div>
       <div class='uk-navbar-flip uk-width-medium-1-5 uk-width-large-1-6 uk-hidden-small'>
-        <a href='tel:1-702-990-0480' class='uk-align-right uk-margin-right'><i class='uk-icon-phone'></i> Call Now!</a>
+        <a href='tel:1-702-990-0480' class='uk-align-right uk-margin-right'><i class='uk-icon-phone'></i> (702) 990-0480</a>
       </div>
     </div>
   </div>
